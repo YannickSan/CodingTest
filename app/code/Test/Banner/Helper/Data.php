@@ -28,9 +28,15 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
         $this->storeManager = $storeManager;
     }
 
+    /**
+     * Are banners functionality enabled on frontend
+     */
     const XML_PATH_BANNERS_FRONTEND_ENABLED = 'cms/banners/enabled';
 
-    const PATH_IMAGES_UPLOAD = 'catalog/tmp/category';
+    /**
+     * Banner images path upload
+     */
+    const PATH_IMAGES_UPLOAD = 'test/tmp/banner';
 
     /**
      * Check banner enabled flag from config

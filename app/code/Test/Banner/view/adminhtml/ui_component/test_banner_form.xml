@@ -106,7 +106,7 @@
                     <settings>
                         <required>false</required>
                         <uploaderConfig>
-                            <param xsi:type="url" name="url" path="catalog/category_image/upload"/>
+                            <param xsi:type="url" name="url" path="admin/testbanners_image/upload"/>
                         </uploaderConfig>
                         <previewTmpl>Test_Banner/image-preview</previewTmpl>
                         <allowedExtensions>jpg jpeg gif png</allowedExtensions>
