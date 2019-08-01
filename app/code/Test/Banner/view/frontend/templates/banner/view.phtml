@@ -1,0 +1,5 @@
+<?php $banner = $block->getBanner(); ?>
+<div class="banner-container" id="banner-<?= $banner->getId()?>">
+    <img src="<?= $banner->getImageFilename()?>" title="<?= $banner->getIdentifier()?>"/>
+    <span class="content"><?= $banner->getHtmlContent()?></span>
+</div>

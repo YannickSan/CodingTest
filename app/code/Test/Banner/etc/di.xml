@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Test\Banner\Api\Data\BannerInterface"
+                type="Test\Banner\Model\Banner" />
+    <preference for="Test\Banner\Api\BannerRepositoryInterface"
+                type="Test\Banner\Model\BannerRepository" />
+
+    <type name="Test\Banner\Api\BannerRepositoryInterface">
+        <plugin name="banner_load_image_path" type="Test\Banner\Plugin\AddFullPathToImage" />
+    </type>
+</config>

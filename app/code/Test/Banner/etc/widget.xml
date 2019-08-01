@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+    <widget class="Test\Banner\Block\Widget\Banner" id="test_banners_widget">
+        <label>Test Banners</label>
+        <description>Test Banners</description>
+        <parameters>
+            <parameter name="banner_id" sort_order="10" visible="true" required="true" xsi:type="select" source_model="Test\Banner\Model\Config\Source\Banner">
+                <label translate="true">Banner</label>
+                <description translate="true">
+                    <![CDATA[
+Select one of the created Banners
+]]>
+                </description>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>
